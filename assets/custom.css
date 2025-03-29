@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.dash-textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+.dash-textarea:focus {
+    border-color: #2c3e50;
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.form-control {
+    transition: all 0.3s ease;
+}
+
+/* Tab styles */
+.dash-tab {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.dash-tab--selected {
+    background-color: white;
+    border-bottom: none;
+    font-weight: 500;
+    color: #2c3e50;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* PDF Upload area */
+#pdf-upload {
+    border: 2px dashed #5e72e4;
+    transition: all 0.3s ease;
+}
+
+#pdf-upload:hover {
+    border-color: #324cdd;
+    background-color: rgba(94, 114, 228, 0.05);
+}
+
+/* URL Input Section */
+#job-url:focus {
+    border-color: #5e72e4;
+    box-shadow: 0 0 0 0.2rem rgba(94, 114, 228, 0.25);
+}
+
+#extract-url-btn {
+    transition: all 0.3s ease;
+}
+
+#extract-url-btn:hover {
+    background-color: #324cdd;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#result-card {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Status indicators */
+.pdf-status-success {
+    color: #2dce89;
+    font-weight: 500;
+}
+
+.pdf-status-error {
+    color: #f5365c;
+    font-weight: 500;
+}
